@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="EmailClientSystem:jar">
-    <output-path>$USER_HOME$/Desktop</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/EmailClientSystem_jar</output-path>
     <root id="archive" name="EmailClientSystem.jar">
       <element id="module-output" name="EmailClientSystem" />
     </root>

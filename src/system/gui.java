@@ -1,5 +1,6 @@
 package system;
 import javax.swing.*;
+import java.awt.*;
 
 public class gui {
 
@@ -11,16 +12,28 @@ public class gui {
     JButton signin_btn , signup_btn ,back_btn_signup , register_btn_signup , signOut_btn_NCTUMAIL , send_btn_NCTUMAIL,refresh_btn_NCTUMAIL , send_btn_sendEmail ,back_btn_sendEmail;
     JTextArea Emails_txt,mail_txt_sendEmail;
     JScrollPane scroll,scroll1;
+    Image signInIcon,userIcon,sendMailIcon,signUpIcon ;
+
 
 
     gui(){
 
 
+        //defining the title-bars icons:-
+        signInIcon= Toolkit.getDefaultToolkit().getImage("log-in.png");
+        userIcon= Toolkit.getDefaultToolkit().getImage("user.png");
+        sendMailIcon=Toolkit.getDefaultToolkit().getImage("email.png");
+        signUpIcon=Toolkit.getDefaultToolkit().getImage("add-user.png");
+
         //creating the JFrames of the app:-
         signin_frame=new JFrame("SignIn");
+        signin_frame.setIconImage(signInIcon);
         signup_frame=new JFrame("SignUp");
+        signup_frame.setIconImage(signUpIcon);
         app_frame=new JFrame("NCTU-MAIL System");
+        app_frame.setIconImage(userIcon);
         sendEmail_frame=new JFrame("SEND EMAIL");
+        sendEmail_frame.setIconImage(sendMailIcon);
         sendEmail_frame.setResizable(false);
         sendEmail_frame.setSize(500,500);
         sendEmail_frame.setLayout(null);
