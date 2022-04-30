@@ -164,7 +164,7 @@ public class event extends gui{
                                 readEmail = new DataInputStream(mailSocket.getInputStream());
                                 String mail = readEmail.readUTF();
                                 readEmail.close();
-                                String msg = "sender:" + sender + "\n\t" + mail + "\n\n";
+                                String msg = "sender:" + sender + "\n\n" + mail + "\n\n\n\n\n";
 
 
                                 if ((!sender.equals("") && !receiver.equals("") && !msg.equals("")) && (!sender.equals(null) && !receiver.equals(null) && !msg.equals(null))) {

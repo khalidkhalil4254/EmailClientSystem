@@ -58,16 +58,18 @@ public class gui {
         status.setBounds(220,100,50,20);
 
         username_lbl=new JLabel("Username:");
-        username_lbl.setBounds(90,20,80,20);
+        username_lbl.setFont(new Font("Verdana", Font.PLAIN, 15));
+        username_lbl.setBounds(70,20,100,20);
 
         password_lbl=new JLabel("Password:");
-        password_lbl.setBounds(90,60,80,20);
+        password_lbl.setFont(new Font("Verdana", Font.PLAIN, 15));
+        password_lbl.setBounds(70,60,100,20);
 
         username_txt=new JTextField();
-        username_txt.setBounds(170,20,210,30);
+        username_txt.setBounds(180,20,210,30);
 
         password_txt=new JPasswordField();
-        password_txt.setBounds(170,60,210,30);
+        password_txt.setBounds(180,60,210,30);
 
         signin_btn=new JButton("SignIn");
         signin_btn.setBounds(300,120,80,35);
@@ -95,16 +97,18 @@ public class gui {
 
         //creating the components of the signUp JFrame:-
         username_lbl_signup=new JLabel("New Username:");
-        username_lbl_signup.setBounds(40,50,120,30);
+        username_lbl_signup.setFont(new Font("Verdana", Font.PLAIN, 15));
+        username_lbl_signup.setBounds(40,50,135,30);
 
         username_txt_signup=new JTextField();
-        username_txt_signup.setBounds(160,50,220,30);
+        username_txt_signup.setBounds(180,50,220,30);
 
         Password_lbl_signup=new JLabel("Create Password:");
-        Password_lbl_signup.setBounds(40,120,120,30);
+        Password_lbl_signup.setFont(new Font("Verdana", Font.PLAIN, 15));
+        Password_lbl_signup.setBounds(40,120,135,30);
 
         Password_txt_signup=new JPasswordField();
-        Password_txt_signup.setBounds(160,120,220,30);
+        Password_txt_signup.setBounds(180,120,220,30);
 
         back_btn_signup=new JButton("Back");
         back_btn_signup.setBounds(40,200,80,50);
@@ -128,9 +132,11 @@ public class gui {
 
         //creating the components of the app JFrame:-
         mailBox_lbl=new JLabel("Your MailBox :-");
-        mailBox_lbl.setBounds(35,35,120,20);
+        mailBox_lbl.setFont(new Font("Verdana", Font.BOLD, 18));
+        mailBox_lbl.setBounds(35,35,180,20);
 
         Emails_txt=new JTextArea();
+        Emails_txt.setFont(new Font("Verdana", Font.PLAIN, 18));
         Emails_txt.setToolTipText("MailBox");
         Emails_txt.setEditable(false);
         scroll = new JScrollPane (Emails_txt, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
@@ -157,7 +163,8 @@ public class gui {
 
         //creating the components of the sendEmail JFrame:-
         sender_lbl_sendEmail=new JLabel("TO :");
-        sender_lbl_sendEmail.setBounds(35,80,50,20);
+        sender_lbl_sendEmail.setFont(new Font("Verdana", Font.PLAIN, 15));
+        sender_lbl_sendEmail.setBounds(35,80,80,20);
 
         sender_txt_sendEmail=new JTextField();
         sender_txt_sendEmail.setEditable(false);
@@ -165,17 +172,20 @@ public class gui {
         sender_txt_sendEmail.setBounds(100,40,240,30);
 
         receiver_lbl_sendEmail=new JLabel("From :");
-        receiver_lbl_sendEmail.setBounds(35,40,50,20);
+        receiver_lbl_sendEmail.setFont(new Font("Verdana", Font.PLAIN, 15));
+        receiver_lbl_sendEmail.setBounds(35,40,80,20);
 
         receiver_txt_sendEmail=new JTextField();
         receiver_txt_sendEmail.setToolTipText("receiver");
         receiver_txt_sendEmail.setBounds(100,80,240,30);
 
         mail_lbl_sendEmail=new JLabel("Mail:");
+        mail_lbl_sendEmail.setFont(new Font("Verdana", Font.BOLD, 16));
         mail_lbl_sendEmail.setBounds(35,140,100,20);
 
 
         mail_txt_sendEmail=new JTextArea();
+        mail_txt_sendEmail.setFont(new Font("Verdana", Font.PLAIN, 18));
         mail_txt_sendEmail.setToolTipText("MailBox");
         scroll1 = new JScrollPane (mail_txt_sendEmail, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         scroll1.setBounds(100,140,240,200);
