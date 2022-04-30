@@ -66,9 +66,11 @@ public class gui {
         password_lbl.setBounds(70,60,100,20);
 
         username_txt=new JTextField();
+        username_txt.setFont(new Font("Verdana", Font.PLAIN, 15));
         username_txt.setBounds(180,20,210,30);
 
         password_txt=new JPasswordField();
+        password_txt.setFont(new Font("Verdana", Font.PLAIN, 15));
         password_txt.setBounds(180,60,210,30);
 
         signin_btn=new JButton("SignIn");
